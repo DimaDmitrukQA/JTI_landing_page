@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR SHAKIR</title>
+    <link rel="icon" type="image/x-icon" href="./src/android-chrome-512x512.png" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="logo"><a href="#">AR SHAKIR</a></h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Product</li>
+                <li><a href="#">Templates</li>
+                <li><a href="#">Blog</li>
+                <li><a href="#">Pricing</li>
+            </ul>
+        </nav>
+        <div class="header_btns">
+            <a class="sign_in_btn" href="#"><button>Sign In</button></a>
+            <a class="start_btn" href="#"><button>Start Free</button></a>
+        </div>
+    </header>
+    <section class="banner">
+        
+        <div class="content">
+            <h1 class="title" align="center">Managing your crypto portfolio has never been easier</h1>
+            <p class="sub_title" align="center">End-to-end payments and financial management in a single solution. Meet the right platform to help realize.</p>
+            <div class="onboarding_buttons">
+                <ul>
+                    <li><a class="get_started" id="get_started"><button>Get started</button></a></li>
+                    <li><a class="how_works" href="#"><button>See how it works</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <img class = "header_img" src="./src/header_content.png" alt="">
+    </section>
+    <button id="scrollToTopBtn">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+    <article id="example_article">
+        <p class="article" id="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices semper neque, vel convallis ex lobortis vel. Aenean aliquam libero vel vulputate pretium. Vestibulum ornare pellentesque pellentesque. Donec imperdiet ante ac tristique finibus. Suspendisse ullamcorper ultricies metus, ornare accumsan purus pretium sed. Suspendisse euismod ultricies cursus. Mauris imperdiet velit in volutpat finibus. Nullam condimentum libero a lacus ullamcorper, ut tempor lorem varius. Curabitur faucibus sed quam ut suscipit. Mauris auctor, nibh quis hendrerit lacinia, eros sapien luctus magna, id finibus metus erat et nunc. Nunc ex tellus, sodales et suscipit feugiat, rhoncus quis lacus. Ut at mauris libero. Proin dui ex, imperdiet vitae ligula sit amet, lobortis pellentesque elit. Suspendisse metus sapien, lacinia quis semper vel, commodo at orci. Cras vitae venenatis est. Morbi in lobortis ex.</p>
+    </article>
+    <div class="contact_us">
+        <h2 id="contact_usTitle">Please, contact us.</h2>
+        <div class="divider"></div>
+        <div class="contactUsForm">
+            <form class="form" id="form">
+                <ul>
+                    <li>
+                        <label>First Name</label>
+                        <input id="firstname" class = "firstname" type="text" placeholder="John">
+                        <small>Error!</small>
+                    </li>
+                    <li>
+                        <label>Last Name</label>
+                        <input id="lastname" class = "lastname" type="text" placeholder="Doe">
+                        <small>Error!</small>
+                    </li>
+                </ul>
+                <ul id="input-flds-2">
+                    <li>
+                        <label>Email</label>
+                        <input id="email" class = "email" type="email" placeholder="johndoe@gmail.com">
+                        <small>Error!</small>
+                    </li>
+                    <li>
+                        <label>Phone number</label>
+                        <input id="phone_number" class="phone_number" type="text" placeholder="+380 00 00 00 000">
+                        <small>Error!</small>
+                    </li>
+                </ul>
+                <textarea name="Message" id="user_message" cols="30" rows="10" placeholder="I'm interested in learning more about..."></textarea>
+                <a class="send_info" type="submit"><button>Send</button></a>
+            </form>
+        </div>
+        
+        
+    </div>
+    <footer>
+        <div class="footer_menu">
+            <h1 class="logo"><a href="#">AR SHAKIR</a></h1>
+            <div class="menu_nav">
+                <h1 class="nav">Menu</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="social_networks">
+                <h1 class="follow">Follow Us</h1>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/in/dmitry-dmitryk-93b6b921b/">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="author">This page was made by Dmitry Dmitryk.</p>
+    </footer>
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        const scrollToTop = document.querySelector("#scrollToTopBtn");
+        scrollToTop.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+        });
+        const scrollToContactUs = document.querySelector("#get_started");
+        scrollToContactUs.addEventListener("click", function() {
+            window.scrollTo({
+                top: 1400,
+                left: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+    <script src="./index.js"></script>
+</body>
+</html>

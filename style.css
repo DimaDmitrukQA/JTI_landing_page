@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: rgb(79, 79, 255); */
+}
+body{
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Manrope', normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: azure;
+}
+.logo {
+    cursor: pointer;
+    font-family: 'Manrope', bold;
+    font-weight: 700;
+    font-size: 20px;
+    color: azure;
+    margin-right: 17%;
+}
+.logo a{
+    font-weight: 700;
+    font-size: 20px;
+}
+li, a, button{
+    font-family: 'Manrope', normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: azure;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 100000;
+    transition: 0.5s;
+}
+header.sticky
+{
+    padding: 3px 124.6px;
+    background: rgb(106, 97, 221);
+}
+header.sticky button 
+{
+    background-color: white;
+    color: rgb(106, 97, 221);
+    transition: all 0.4s ease 0s;
+}
+header.sticky button:hover
+{
+    background-color:rgb(253, 253, 238) ;
+    color: rgb(111, 103, 233);
+    box-shadow: 0 0 10px rgba(255, 254, 244, 0.551);
+}
+.header_img {
+    width: 50%;
+    border: none;
+    border-radius: 15px;
+    align-items: center;
+    margin: 5% 25%;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.496);
+}
+.nav_links ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+    color: rgb(136, 136, 255);
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(104, 104, 228, 1);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.202);
+}
+
+button:hover {
+    background-color: rgba(116, 116, 253, 0.5);
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(./src/img.png);
+    background-size: cover;
+}
+.content {
+    padding: 0% 3%;
+    padding-bottom: 0%;
+}
+.onboarding_buttons {
+    margin-left: 34%;
+    padding: 0px;
+}
+.onboarding_buttons ul {
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+.onboarding_buttons ul li {
+    display: inline-block;
+    padding: 0% 3%;
+}
+
+h1.title{
+    font-family: 'Manrope', normal;
+    font-weight: 800;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10% 20%;
+    padding-bottom: 0px;
+}
+h1{
+    margin: 25px;
+}
+p.sub_title{
+    /* position: fixed; */
+    /* width: 668px;
+    height: 60px; */
+    /* left: 386px; */
+    color: rgb(255, 255, 255);
+    padding: 5% 3%;
+    margin: 0% 25%;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+/* or 150% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+#scrollToTopBtn {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    cursor: pointer;
+}
+article p{
+    color: rgb(106, 97, 221);
+    margin: 10%;
+    margin-top: 13%;
+}
+.contact_us {
+    background-color: white;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.039);
+    padding: 5%;
+    border-radius: 7px;
+
+}
+#contact_usTitle{
+    margin-left: auto;
+}
+.divider {
+    width: 60%;
+    height: 2px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+.contact_us ul{
+    display: flex;
+}
+.contact_us li{
+    display: inline-block;
+    width: 400px;
+}
+input{
+    border: none;
+    appearance: none;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 10px 80px;
+    height: 30px;
+    width: 350px;
+    outline: none;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.069);
+}
+textarea{
+    border: none;
+    appearance: none;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 10px 80px;
+    height: 30px;
+    width: 750px;
+    height: 300px;
+    outline: none;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.069);
+}
+textarea::placeholder{
+    color: rgb(142, 142, 142);
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+textarea:focus::placeholder{
+    color: transparent;
+}
+input:focus::placeholder{
+    color: transparent;
+}
+input::placeholder{
+    color: rgb(142, 142, 142);
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+h2{
+    color: rgb(106, 97, 221);
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 30px;
+    margin-bottom: 2%;
+}
+#example_article {
+    padding: 15% 10%;
+    padding-bottom: 50px;
+}
+.send_info{
+    margin-left: 650px;
+}
+.send_info button{
+    padding: 10px 65px;
+    cursor: pointer;
+}
+.contact_us ul{
+    margin-top: 30px;
+}
+.missed_field input{
+    box-shadow: 0 0 7px rgba(255, 0, 0, 0.495);
+    transition: 0.3s ease;
+}
+.missed_field small{
+    visibility: visible;
+}
+small{
+    color: red;
+    padding-left: 100px;
+    visibility: hidden;
+    font-size: 10px;
+}
+#input-flds-2{
+    margin-top: 15px;
+}
+label{
+    color: rgba(105, 97, 221, 0.732);
+    padding-left: 25%;
+}
+footer{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+}
+.footer_menu {
+    margin: 0%;
+    padding: 2% 10%;
+    height: 300px;
+}
+.footer_menu .logo{
+    font-size: 25px;
+    width: 130px;
+}
+.menu_nav{
+    position: relative;
+    bottom: 60px;
+    margin: 0% 70%;
+}
+.social_networks{
+    position: relative;
+    bottom: 224px;
+    margin: 0% 90%;
+}
+.nav {
+    font-size: 20px;
+}
+.follow {
+    font-size: 20px;
+    width: 135px;
+}
+.menu_nav ul {
+    list-style: none;
+    padding: 3% 0%;
+}
+.menu_nav ul li{
+    margin: 5px;
+}
+.menu_nav ul li a{
+    color: gray;
+    width: 100px;
+}
+.social_networks ul {
+    list-style: none;
+}
+.social_networks ul li{
+    margin: 5px;
+}
+.social_networks ul li a{
+    color: gray;
+    width: fit-content;
+}
+.author{
+    background-color: rgb(43, 43, 43);
+    color: gray;
+    padding: 1%;
+    font-size: 12px;
+}
