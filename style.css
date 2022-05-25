@@ -111,8 +111,11 @@ button:hover {
     padding-bottom: 0%;
 }
 .onboarding_buttons {
-    margin-left: 34%;
-    padding: 0px;
+    /* margin-left: 34%;
+    padding: 0px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 .onboarding_buttons ul {
     position: relative;
